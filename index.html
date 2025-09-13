@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Dynamische Progress Bar Dark Mode</title>
+<title>Apple Watch bis Luxusmarkenuhr</title>
 <style>
   body {
     margin: 0;
@@ -42,10 +42,16 @@
   .labels span {
     user-select: none;
   }
+  h2 {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 </style>
 </head>
 <body>
   <div class="container">
+    <h2>Apple Watch bis Luxusmarkenuhr</h2>
     <div class="progress-container">
       <div class="progress-bar" id="progressBar"></div>
     </div>
@@ -59,10 +65,10 @@
     let progress = 0;
     const progressBar = document.getElementById('progressBar');
 
-    // Initial bleibt die Bar leer (0%)
+    // Startet leer (0%)
     progressBar.style.width = '0%';
 
-    // Beispiel Funktion, um den Fortschritt manuell zu starten
+    // Beispiel-Funktion, um den Fortschritt manuell zu starten
     function startProgress() {
       if (progress < 100) {
         progress += 1;
@@ -71,9 +77,8 @@
       }
     }
 
-    // Starte die Animation z.B. nach 2 Sek, nur als Demo
-    // setTimeout(() => requestAnimationFrame(startProgress), 2000);
+    // Falls gewünscht, z.B. hier automatisch starten nach 1 Sekunde:
+    // setTimeout(() => requestAnimationFrame(startProgress), 1000);
   </script>
 </body>
 </html>
-d
